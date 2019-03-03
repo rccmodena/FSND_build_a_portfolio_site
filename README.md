@@ -2,7 +2,9 @@
 
 This is the second project of the Udacity's Full Stack Web Developers Nanodegree.
 
-The project consists in .
+The project consists in building a portfolio website, based on a design mockup ([PDF-file](mockup/design-mockup-portfolio.pdf)). The website replicates the design in HTML, CSS, and is a responsive website that displays images, descriptions and links to each of the projects that will be developed during the Nanodegree program.
+
+This project followed the [Udacity Frontend Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/).
 
 ## Install
 
@@ -16,6 +18,7 @@ $ cd build_a_portfolio_site/
 ```
 
 ## Sections
+
 
 Under constructions....
 
