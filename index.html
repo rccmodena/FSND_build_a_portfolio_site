@@ -1,16 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
     <head>
+
         <meta charset="utf-8">
-        <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"/>
+        <meta name="author" content="Rudi César Comiotto Modena">
+        <meta name="description" content="Udacity Nanodegree Project: Build a Portfolio Site">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <title>Rudi C. C. Modena</title>
+
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+        <!-- Josefin Sans Font -->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- Main styles -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+
+    <body class="bg-dark text-light" >
+
+        <!-- Header: Logo + Name + Navbar -->
         <header>
+
+<!--
+
+
+
+!!!!!!!!!!!!!!!!!!!!!
+
+PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/?
+
+!!!!!!!!!!!!!!!!!!!!!
+
+
+            <img src="img/logo.svg" alt="Site Logo">
+
             <h1>Rudi C. C. Modena</h1>
             <h3>Geologist and Junior Web Developer</h3>
             <nav>
+                <div class="">
+                    Home
+                </div>
                 <div class="">
                     Featured Work
                 </div>
@@ -18,89 +53,270 @@
                     About
                 </div>
                 <div class="">
-                Education
+                    Education
                 </div>
                 <div class="">
                     Professional and Academic Experience
                 </div>
+                <div class="">
+                    Contact
+                </div>
             </nav>
+-->
+
         </header>
+
+        <!-- Main Content -->
         <main>
-            <h2>Featured Work</h2>
-            <p>Adicionar foto de cada projeto do Nanodegree</p>
-            <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+            <!-- About Me Article -->
+            <article id="featuredWork">
+                <div class="container">
+                    <div class="row">
+                        <h2>Featured Work</h2>
 
-            <h2>About</h2>
-            <p>Minha foto 100% width, criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-            <p>Breve resumo</p>
-            <h2>Education</h2>
-            <p>
-            Federal University of Rio Grande do Sul (UFRGS)
-            Master's degree student in Mining Engineering	(Mar. 2017 to Mar. 2019)
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <img src="" alt="" width="220" height="342">
+                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <img src="" alt="" width="220" height="342">
+                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <img src="" alt="" width="220" height="342">
+                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <img src="" alt="" width="220" height="342">
+                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <img src="" alt="" width="220" height="342">
+                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <img src="" alt="" width="220" height="342">
+                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-            UNISINOS University
-            Bachelor’s degree in Geology	(July 2008 to Aug. 2014)
-            Monograph: “Using Terrestrial gamma spectrometry and Hyperspectral Remote Sensing to distinguish acid and basic rocks of Serra Geral Formation, in Serra Gaúcha wine region, Rio Grande do Sul, Brazil”
-            University of Caxias do Sul
-            Incomplete Bachelor’s degree in Computer Science
-            TEC Brasil
-            (Mar. 2000 to June 2005)
-            Informatics Technician
-            (Mar. 1999 to Sept. 2001)
-            </p>
-            <h2>Professional and Academic Experience</h2>
-            <p>
-                Federal University of Rio Grande do Sul (UFRGS)
-                Graduate Research Assistant at Mine Planning and Mineral
-                Exploration Laboratory (LPM)	(Mar. 2017 to now)
-                    • Reserch about geostatistics.
+            <!-- About Me Article -->
+            <article id="aboutMe">
+                <div class="container">
+                    <h2><i class="fas fa-user"></i> About Me</h2>
+                    <p>Minha foto 100% width, criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                    <p>I am a Junior Geologist and Web Developer, highly motivated and committed individual. I have good communication skills and work very well both independently, and as a part of a team. </p>
+                    <p>I have experience with field work, data collection, remote sensing, GIS, geophysics and geostatistics.</p>
+                    <p>Lately, I’ve been working as Web Developer, and I'm studying a lot to improve my knowledge in this field.</p>
+                    <p>My future steps will be merging both Geology and Software development to create interisting things!</p>
+                    <hr class="bg-light">
+                </div>
+            </article>
+
+            <!-- Education Article -->
+            <article id="education">
+                <div class="container">
+                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+
+                    <!-- Master UFRGS -->
+                    <h3><i class="fas fa-circle"></i> Master's degree student in Mining Engineering</h3>
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <h5>Federal University of Rio Grande do Sul (UFRGS)</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>(Mar. 2017 to Present)</h5>
+                        </div>
+                    </div>
+                    <div class="row experience-summary">
+                        <div class="col-md-12">
+                            <p>Research: Methods for choosing stationary for geostatistics modeling</p>
+                        </div>
+                    </div>
+
+                    <!-- Bachelor UNISINOS -->
+                    <h3><i class="fas fa-circle"></i> Bachelor’s degree in Geology</h3>
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <h5>UNISINOS University</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>(July 2008 to Aug. 2014)</h5>
+                        </div>
+                    </div>
+                    <div class="row experience-summary">
+                        <div class="col-md-12">
+                            <p>Monograph: “Using Terrestrial gamma spectrometry and Hyperspectral Remote Sensing to distinguish acid and basic rocks of Serra Geral Formation, in Serra Gaúcha wine region, Rio Grande do Sul, Brazil”</p>
+                        </div>
+                    </div>
+
+                    <!-- Bachelor UCS -->
+
+                    <h3><i class="fas fa-circle"></i> Incomplete Bachelor’s degree in Computer Science</h3>
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <h5>University of Caxias do Sul (UCS)</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>(Mar. 2000 to June 2005)</h5>
+                        </div>
+                    </div>
+
+                    <!-- Technician TEC Brasil -->
+
+                    <h3><i class="fas fa-circle"></i> Informatics Technician</h3>
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <h5>TEC Brasil</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>(Mar. 1999 to Sept. 2001)</h5>
+                        </div>
+                    </div>
+                    <div class="row experience-summary">
+                        <div class="col-md-12">
+                            <p>Monograph: “Using Terrestrial gamma spectrometry and Hyperspectral Remote Sensing to distinguish acid and basic rocks of Serra Geral Formation, in Serra Gaúcha wine region, Rio Grande do Sul, Brazil”</p>
+                        </div>
+                    </div>
+
+                    <hr class="bg-light">
+                </div>
+            </article>
+
+            <!--Professional and Academic Article -->
+            <article id="professionalExperience">
+                <div class="container">
+                    <h2><i class="fa fa-briefcase"></i> Professional and Academic Experience</h2>
 
 
-                Brazilian Agricultural Research Corporation (Embrapa)
-                Intern at the Remote Sensing and Geoprocessing Laboratory	(Mar. 2013 to July 2014)
-                    • Thematic mapping based on Remote Sensing and GIS tools;
-                    • Digital processing of satellite images;
-                    • Participation in scientific events with presentation of researches;
-                    • Development of the Bachelor's Degree Final Project, involving geological mapping applied to viticulture.
-                UNISINOS University
-                Intern at the Remote Sensing and Digital Cartography
-                Laboratory (LASERCA)	(Sep. 2010 to Feb. 2012)
-                    • Technical support;
-                    • Geoprocessing activities support;
-                    • Data acquisition field surveys (topographical, Geophysical, environmental, etc.), and software processing.
-                UNISINOS University
-                Undergraduate Research Trainee	(Jan. 2010 to Aug. 2010)
-                    • Scientific initiation scholarship – Project: Modelagens Ambiental e Geológica Através do Uso de Geoprocessamento e Inteligência Artificial (MAGGIA);
-                    • Terrestrial laser scanning of geological outcrops;
-                    • Georeferencing and processing point cloud obtained with a terrestrial laser scanner;
-                    • Participation in scientific events with presentation of researches.
-                C.E. Moto Peças Ltda.
-                Data Processing Coordinator	(June 2006 to Jan. 2010)
-                    • Improve company's software, developed in Foxpro 2.6;
-                    • Technical support;
-                    • Basic hardware maintenance, installation and maintenance of operating systems (Windows and Linux).
-                Compudados Processamento de Dados Ltda.
-                Assistant Software Developer	(July 2003 to Nov. 2005)
-                    • Technical support;
-                    • Improve customers software related needs, developed in Foxpro 2.6 or Visual Foxpro 6.0;
-                    • Software deployment.
-            </p>
+                    <!-- Master UFRGS -->
+                    <h3><i class="fas fa-circle"></i> Master's degree student in Mining Engineering</h3>
+                    <div class="row ">
+                        <div class="col-md-9">
+                            <h5>Federal University of Rio Grande do Sul (UFRGS)</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>(Mar. 2017 to Present)</h5>
+                        </div>
+                    </div>
+                    <div class="row experience-summary">
+                        <div class="col-md-12">
+                            <p>Research: Methods for choosing stationary for geostatistics modeling</p>
+                        </div>
+                    </div>
+
+
+                        <!-- Vendabem -->
+                        <div class="row ">
+                            <div class="col-md-9">
+                                <h3>Vendabem Informática</h3>
+                                <h4>Program Manager</h4>
+                                <h5>Some project</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>September 2018 - Present</h4>
+                            </div>
+                        </div>
+                        <div class="row experience-summary">
+                            <div class="col-md-12">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat ullam, pariatur, iste sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam corporis, accusamus repudiandae nihil! Sed?</p>
+                            </div>
+                        </div>
+
+                        <!-- UFRGS -->
+                        <div class="row ">
+                            <div class="col-md-9">
+                                <h3>Graduate Research Assistant</h3>
+                                <h4>Mine Planning and Mineral
+                                Exploration Laboratory (LPM)</h4>
+                                <h4>Federal University of Rio Grande do Sul (UFRGS)t</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Mar. 2015 - Sep. 2018</h3>
+                            </div>
+                        </div>
+                        <div class="row experience-summary">
+                            <div class="col-md-12">
+                                <p>Reserch about geostatistics.</p>
+                            </div>
+                        </div>
+                        <p>
+
+                            Brazilian Agricultural Research Corporation (Embrapa)
+                            Intern at the Remote Sensing and Geoprocessing Laboratory	(Mar. 2013 to July 2014)
+                                • Thematic mapping based on Remote Sensing and GIS tools;
+                                • Digital processing of satellite images;
+                                • Participation in scientific events with presentation of researches;
+                                • Development of the Bachelor's Degree Final Project, involving geological mapping applied to viticulture.
+                            UNISINOS University
+                            Intern at the Remote Sensing and Digital Cartography
+                            Laboratory (LASERCA)	(Sep. 2010 to Feb. 2012)
+                                • Technical support;
+                                • Geoprocessing activities support;
+                                • Data acquisition field surveys (topographical, Geophysical, environmental, etc.), and software processing.
+                            UNISINOS University
+                            Undergraduate Research Trainee	(Jan. 2010 to Aug. 2010)
+                                • Scientific initiation scholarship – Project: Modelagens Ambiental e Geológica Através do Uso de Geoprocessamento e Inteligência Artificial (MAGGIA);
+                                • Terrestrial laser scanning of geological outcrops;
+                                • Georeferencing and processing point cloud obtained with a terrestrial laser scanner;
+                                • Participation in scientific events with presentation of researches.
+                            C.E. Moto Peças Ltda.
+                            Data Processing Coordinator	(June 2006 to Jan. 2010)
+                                • Improve company's software, developed in Foxpro 2.6;
+                                • Technical support;
+                                • Basic hardware maintenance, installation and maintenance of operating systems (Windows and Linux).
+                            Compudados Processamento de Dados Ltda.
+                            Assistant Software Developer	(July 2003 to Nov. 2005)
+                                • Technical support;
+                                • Improve customers software related needs, developed in Foxpro 2.6 or Visual Foxpro 6.0;
+                                • Software deployment.
+                        </p>
+                    </div>
+                    <hr class="bg-light">
+                </div>
+            </article>
+
+            <!-- About Me Article -->
+            <article id="contact">
+                <div class="container">
+                    <h2><i class="fas fa-user"></i> Contact Me</h2>
+                    <div class="">
+                        <i class="fab fa-linkedin"></i>linkedin
+                    </div>
+                    <div class="">
+                        github
+                    </div>
+                    <div class="">
+                </div>
+            </article>
+
+
         </main>
+
+        <!-- Footer Copyright -->
         <footer>
             <div class="container">
-              <div class="">
-                  linkedin
-              </div>
-              <div class="">
-                  github
-              </div>
-              <div class="">
-                  twitter
-              </div>
-              <div class="">
-                  Copyright © Rudi C. C. Modena - 2019
-              </div>
+              Copyright © Rudi C. C. Modena 2019
             </div>
         </footer>
+
+        <!-- Bootstrap Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
     </body>
 </html>
