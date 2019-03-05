@@ -1,4 +1,21 @@
-body{
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    /*
     background-color: #222;
     color: #BBB;
+    */
+}
+
+h2 i {
+    color: #343a40;
+    background: #f8f9fa;
+    width: 1.6em;
+    height: 1.6em;
+    /*font-size: 20px;
+    line-height: 42px;*/
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    transition-duration: 0.3s;
 }
