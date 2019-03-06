@@ -6,16 +6,26 @@ body {
     */
 }
 
+.header_title {
+    text-align: right;
+}
+
+article {
+    margin-top: 100px;
+}
+
 h2 i {
-    color: #343a40;
-    background: #f8f9fa;
     width: 1.6em;
     height: 1.6em;
-    /*font-size: 20px;
-    line-height: 42px;*/
+    padding: 8px;
+    background: #f8f9fa;
+    color: #6c757d;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
-    padding: 8px;
-    transition-duration: 0.3s;
+    margin: 10px;
+}
+
+h3 {
+    margin-top: 30px;
 }
