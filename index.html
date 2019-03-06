@@ -24,24 +24,96 @@
 
     <body class="bg-dark text-light" >
 
-        <!-- Header: Logo + Name + Navbar -->
-        <header>
+        <!-- Header: Jumbotron Logo + Name -->
+        <header class="container">
+            <div class="jumbotron bg-secondary">
+                <div class="row">
+                    <div class="header_logo col-sm-2">
+                        <img src="img/logo.svg" alt="Site Logo">
+                    </div>
+                    <div class="header_title col-sm-10 yellow">
+                        <h1>Rudi C. C. Modena</h1>
+                        <p class="lead">Geologist and Junior Web Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Featured Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Professional and Academic Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+<!--
+PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/?
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<a class="navbar-brand" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item">
+<a class="nav-link disabled" href="#">Disabled</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+<div class="dropdown-menu" aria-labelledby="dropdown01">
+<a class="dropdown-item" href="#">Action</a>
+<a class="dropdown-item" href="#">Another action</a>
+<a class="dropdown-item" href="#">Something else here</a>
+</div>
+</li>
+</ul>
+<form class="form-inline my-2 my-lg-0">
+<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+</div>
+</nav>
+-->
+
 
 <!--
 
 
 
-!!!!!!!!!!!!!!!!!!!!!
 
-PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/?
-
-!!!!!!!!!!!!!!!!!!!!!
-
-
-            <img src="img/logo.svg" alt="Site Logo">
-
-            <h1>Rudi C. C. Modena</h1>
-            <h3>Geologist and Junior Web Developer</h3>
             <nav>
                 <div class="">
                     Home
@@ -71,43 +143,40 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
             <!-- About Me Article -->
             <article id="featuredWork">
                 <div class="container">
-                    <div class="row">
-                        <h2>Featured Work</h2>
+                    <h2 class="bg-secondary rounded"><i class="far fa-file-code"></i> Featured Work</h2>
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <img src="" alt="" width="220" height="342">
-                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
-                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <img src="" alt="" width="220" height="342">
-                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
-                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <img src="" alt="" width="220" height="342">
-                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
-                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <img src="" alt="" width="220" height="342">
-                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
-                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <img src="" alt="" width="220" height="342">
-                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
-                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <img src="" alt="" width="220" height="342">
-                                    <p>Adicionar foto de cada projeto do Nanodegree</p>
-                                    <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <img src="" alt="" width="220" height="342">
+                                <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
                             </div>
-                            <hr>
+                            <div class="col-md-6 col-lg-4">
+                                <img src="" alt="" width="220" height="342">
+                                <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <img src="" alt="" width="220" height="342">
+                                <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <img src="" alt="" width="220" height="342">
+                                <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <img src="" alt="" width="220" height="342">
+                                <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <img src="" alt="" width="220" height="342">
+                                <p>Adicionar foto de cada projeto do Nanodegree</p>
+                                <p>Criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,23 +185,22 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
             <!-- About Me Article -->
             <article id="aboutMe">
                 <div class="container">
-                    <h2><i class="fas fa-user"></i> About Me</h2>
+                    <h2 class="bg-secondary rounded"><i class="fas fa-user"></i> About Me</h2>
                     <p>Minha foto 100% width, criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
                     <p>I am a Junior Geologist and Web Developer, highly motivated and committed individual. I have good communication skills and work very well both independently, and as a part of a team. </p>
                     <p>I have experience with field work, data collection, remote sensing, GIS, geophysics and geostatistics.</p>
                     <p>Lately, I’ve been working as Web Developer, and I'm studying a lot to improve my knowledge in this field.</p>
                     <p>My future steps will be merging both Geology and Software development to create interisting things!</p>
-                    <hr class="bg-light">
                 </div>
             </article>
 
             <!-- Education Article -->
             <article id="education">
                 <div class="container">
-                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+                    <h2 class="bg-secondary rounded"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
 
                     <!-- Master UFRGS -->
-                    <h3><i class="fas fa-circle"></i> Master's degree student in Mining Engineering</h3>
+                    <h3>Master's degree student in Mining Engineering</h3>
                     <div class="row ">
                         <div class="col-md-8">
                             <h5>Federal University of Rio Grande do Sul (UFRGS)</h5>
@@ -148,7 +216,7 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                     </div>
 
                     <!-- Bachelor UNISINOS -->
-                    <h3><i class="fas fa-circle"></i> Bachelor’s degree in Geology</h3>
+                    <h3>Bachelor’s degree in Geology</h3>
                     <div class="row ">
                         <div class="col-md-8">
                             <h5>UNISINOS University</h5>
@@ -165,7 +233,7 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
 
                     <!-- Bachelor UCS -->
 
-                    <h3><i class="fas fa-circle"></i> Incomplete Bachelor’s degree in Computer Science</h3>
+                    <h3>Incomplete Bachelor’s degree in Computer Science</h3>
                     <div class="row ">
                         <div class="col-md-8">
                             <h5>University of Caxias do Sul (UCS)</h5>
@@ -177,7 +245,7 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
 
                     <!-- Technician TEC Brasil -->
 
-                    <h3><i class="fas fa-circle"></i> Informatics Technician</h3>
+                    <h3>Informatics Technician</h3>
                     <div class="row ">
                         <div class="col-md-8">
                             <h5>TEC Brasil</h5>
@@ -186,24 +254,17 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                             <h5>(Mar. 1999 to Sept. 2001)</h5>
                         </div>
                     </div>
-                    <div class="row experience-summary">
-                        <div class="col-md-12">
-                            <p>Monograph: “Using Terrestrial gamma spectrometry and Hyperspectral Remote Sensing to distinguish acid and basic rocks of Serra Geral Formation, in Serra Gaúcha wine region, Rio Grande do Sul, Brazil”</p>
-                        </div>
-                    </div>
-
-                    <hr class="bg-light">
                 </div>
             </article>
 
             <!--Professional and Academic Article -->
             <article id="professionalExperience">
                 <div class="container">
-                    <h2><i class="fa fa-briefcase"></i> Professional and Academic Experience</h2>
+                    <h2 class="bg-secondary rounded"><i class="fa fa-briefcase"></i> Professional and Academic Experience</h2>
 
 
                     <!-- Master UFRGS -->
-                    <h3><i class="fas fa-circle"></i> Master's degree student in Mining Engineering</h3>
+                    <h3>Master's degree student in Mining Engineering</h3>
                     <div class="row ">
                         <div class="col-md-9">
                             <h5>Federal University of Rio Grande do Sul (UFRGS)</h5>
@@ -285,14 +346,13 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                                 • Software deployment.
                         </p>
                     </div>
-                    <hr class="bg-light">
                 </div>
             </article>
 
-            <!-- About Me Article -->
-            <article id="contact">
+            <!-- Contact Me Article -->
+            <article id="contactMe">
                 <div class="container">
-                    <h2><i class="fas fa-user"></i> Contact Me</h2>
+                    <h2 class="bg-secondary rounded"><i class="fas fa-phone"></i> Contact Me</h2>
                     <div class="">
                         <i class="fab fa-linkedin"></i>linkedin
                     </div>
