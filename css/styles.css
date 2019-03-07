@@ -3,8 +3,16 @@ body {
     font-size: 18px;
 }
 
+.navbar {
+    margin-bottom: 32px;
+}
+
+.nav-item:hover {
+    background-color: #20c997;
+}
+
 .header-logo {
-    
+
 }
 
 .header-title {
@@ -25,6 +33,10 @@ i {
     text-align: center;
     vertical-align: middle;
     margin: 10px;
+}
+
+.featured-work {
+    padding: 20px;
 }
 
 .experience-title {
