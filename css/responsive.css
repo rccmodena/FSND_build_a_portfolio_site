@@ -11,6 +11,9 @@
     html {
         font-size: 1.4rem;
     }
+    .experience_date {
+        text-align: left;
+    }
 }
 
 @include media-breakpoint-up(lg) {
