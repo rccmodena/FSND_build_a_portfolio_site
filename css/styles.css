@@ -1,20 +1,21 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    /*
-    background-color: #222;
-    color: #BBB;
-    */
+    font-size: 18px;
 }
 
-.header_title {
+.header-logo {
+    
+}
+
+.header-title {
     text-align: right;
 }
 
-article {
+.articles {
     margin-top: 100px;
 }
 
-h2 i {
+i {
     width: 1.6em;
     height: 1.6em;
     padding: 8px;
@@ -26,6 +27,14 @@ h2 i {
     margin: 10px;
 }
 
-h3 {
+.experience-title {
     margin-top: 30px;
+}
+
+.experience-date {
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
 }
