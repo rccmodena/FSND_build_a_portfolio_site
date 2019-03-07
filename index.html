@@ -20,6 +20,9 @@
 
         <!-- Main styles -->
         <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Responsive styles -->
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
 
     <body class="bg-dark text-light" >
@@ -28,120 +31,74 @@
         <header class="container">
             <div class="jumbotron bg-secondary">
                 <div class="row">
-                    <div class="header_logo col-sm-2">
+                    <div class="header-logo col-sm-2">
                         <img src="img/logo.svg" alt="Site Logo">
                     </div>
-                    <div class="header_title col-sm-10 yellow">
-                        <h1>Rudi C. C. Modena</h1>
+                    <div class="header-title col-sm-10 yellow">
+                        <h1 class="display-6">Rudi C. C. Modena</h1>
                         <p class="lead">Geologist and Junior Web Developer</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
 
         <!-- Menu -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Featured Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Professional and Academic Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutMe">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#featuredWork">Featured Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#professionalExperience">Professional and Academic Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactMe">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-
-
-<!--
-PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/?
-
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<a class="navbar-brand" href="#">Navbar</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-<ul class="navbar-nav mr-auto">
-<li class="nav-item active">
-<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Link</a>
-</li>
-<li class="nav-item">
-<a class="nav-link disabled" href="#">Disabled</a>
-</li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-<div class="dropdown-menu" aria-labelledby="dropdown01">
-<a class="dropdown-item" href="#">Action</a>
-<a class="dropdown-item" href="#">Another action</a>
-<a class="dropdown-item" href="#">Something else here</a>
-</div>
-</li>
-</ul>
-<form class="form-inline my-2 my-lg-0">
-<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form>
-</div>
-</nav>
--->
-
-
-<!--
-
-
-
-
-            <nav>
-                <div class="">
-                    Home
-                </div>
-                <div class="">
-                    Featured Work
-                </div>
-                <div class="">
-                    About
-                </div>
-                <div class="">
-                    Education
-                </div>
-                <div class="">
-                    Professional and Academic Experience
-                </div>
-                <div class="">
-                    Contact
-                </div>
-            </nav>
--->
-
-        </header>
-
         <!-- Main Content -->
         <main>
+
             <!-- About Me Article -->
-            <article id="featuredWork">
+            <article id="aboutMe">
+                <div class="container">
+                    <h2 class="bg-secondary rounded"><i class="fas fa-user"></i> About Me</h2>
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 750px)" srcset="img/GiantsCauseway.JPG 2x, img/GiantsCauseway.JPG" />
+                            <source media="(min-width: 500px)" srcset="img/GiantsCauseway.JPG" />
+                            <img src="img/GiantsCauseway.JPG" alt="Giant's Causeway">
+                        </picture>
+                        <figcaption>Giant's Causeway. <a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Giant%27s_Causeway_%2814%29.JPG" target="_blank">Source</a></figcaption>
+                    </figure>
+                    <p>I am a Junior Geologist and Web Developer, highly motivated and committed individual. I have good communication skills and work very well both independently, and as a part of a team.
+                        I have experience with field work, data collection, remote sensing, GIS, geophysics and geostatistics.
+                        Lately, I’ve been working as Web Developer, and I'm studying a lot to improve my knowledge in this field.
+                        My future steps will be merging both Geology and Software development to create interesting things!
+                    </p>
+                </div>
+            </article>
+
+            <!-- About Me Article -->
+            <article id="featuredWork" class="articles">
                 <div class="container">
                     <h2 class="bg-secondary rounded"><i class="far fa-file-code"></i> Featured Work</h2>
 
@@ -182,50 +139,38 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                 </div>
             </article>
 
-            <!-- About Me Article -->
-            <article id="aboutMe">
-                <div class="container">
-                    <h2 class="bg-secondary rounded"><i class="fas fa-user"></i> About Me</h2>
-                    <p>Minha foto 100% width, criar imagens responsivas para 3 breakpoints e também para a imagem maior cirar 1x e 2x</p>
-                    <p>I am a Junior Geologist and Web Developer, highly motivated and committed individual. I have good communication skills and work very well both independently, and as a part of a team. </p>
-                    <p>I have experience with field work, data collection, remote sensing, GIS, geophysics and geostatistics.</p>
-                    <p>Lately, I’ve been working as Web Developer, and I'm studying a lot to improve my knowledge in this field.</p>
-                    <p>My future steps will be merging both Geology and Software development to create interisting things!</p>
-                </div>
-            </article>
-
             <!-- Education Article -->
-            <article id="education">
+            <article id="education" class="articles">
                 <div class="container">
                     <h2 class="bg-secondary rounded"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
 
                     <!-- Master UFRGS -->
-                    <h3>Master's degree student in Mining Engineering</h3>
+                    <h4 class="experience-title">Master's degree student in Mining Engineering</h4>
                     <div class="row ">
                         <div class="col-md-8">
-                            <h5>Federal University of Rio Grande do Sul (UFRGS)</h5>
+                            <p>Federal University of Rio Grande do Sul (UFRGS)</p>
                         </div>
-                        <div class="col-md-4">
-                            <h5>(Mar. 2017 to Present)</h5>
+                        <div class="col-md-4 experience-date">
+                            <p>(Mar. 2017 to Present)</p>
                         </div>
                     </div>
-                    <div class="row experience-summary">
+                    <div class="row">
                         <div class="col-md-12">
                             <p>Research: Methods for choosing stationary for geostatistics modeling</p>
                         </div>
                     </div>
 
                     <!-- Bachelor UNISINOS -->
-                    <h3>Bachelor’s degree in Geology</h3>
+                    <h4 class="experience-title">Bachelor’s degree in Geology</h4>
                     <div class="row ">
                         <div class="col-md-8">
-                            <h5>UNISINOS University</h5>
+                            <p>UNISINOS University</p>
                         </div>
-                        <div class="col-md-4">
-                            <h5>(July 2008 to Aug. 2014)</h5>
+                        <div class="col-md-4 experience-date">
+                            <p>(July 2008 to Aug. 2014)</p>
                         </div>
                     </div>
-                    <div class="row experience-summary">
+                    <div class="row">
                         <div class="col-md-12">
                             <p>Monograph: “Using Terrestrial gamma spectrometry and Hyperspectral Remote Sensing to distinguish acid and basic rocks of Serra Geral Formation, in Serra Gaúcha wine region, Rio Grande do Sul, Brazil”</p>
                         </div>
@@ -233,32 +178,32 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
 
                     <!-- Bachelor UCS -->
 
-                    <h3>Incomplete Bachelor’s degree in Computer Science</h3>
+                    <h4 class="experience-title">Incomplete Bachelor’s degree in Computer Science</h4>
                     <div class="row ">
                         <div class="col-md-8">
-                            <h5>University of Caxias do Sul (UCS)</h5>
+                            <p>University of Caxias do Sul (UCS)</p>
                         </div>
-                        <div class="col-md-4">
-                            <h5>(Mar. 2000 to June 2005)</h5>
+                        <div class="col-md-4  experience-date">
+                            <p>(Mar. 2000 to June 2005)</p>
                         </div>
                     </div>
 
                     <!-- Technician TEC Brasil -->
 
-                    <h3>Informatics Technician</h3>
+                    <h4 class="experience-title">Informatics Technician</h4>
                     <div class="row ">
                         <div class="col-md-8">
-                            <h5>TEC Brasil</h5>
+                            <p>TEC Brasil</p>
                         </div>
-                        <div class="col-md-4">
-                            <h5>(Mar. 1999 to Sept. 2001)</h5>
+                        <div class="col-md-4  experience-date">
+                            <p>(Mar. 1999 to Sept. 2001)</p>
                         </div>
                     </div>
                 </div>
             </article>
 
             <!--Professional and Academic Article -->
-            <article id="professionalExperience">
+            <article id="professionalExperience" class="articles">
                 <div class="container">
                     <h2 class="bg-secondary rounded"><i class="fa fa-briefcase"></i> Professional and Academic Experience</h2>
 
@@ -269,11 +214,11 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                         <div class="col-md-9">
                             <h5>Federal University of Rio Grande do Sul (UFRGS)</h5>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3  experience-date">
                             <h5>(Mar. 2017 to Present)</h5>
                         </div>
                     </div>
-                    <div class="row experience-summary">
+                    <div class="row">
                         <div class="col-md-12">
                             <p>Research: Methods for choosing stationary for geostatistics modeling</p>
                         </div>
@@ -291,7 +236,7 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                                 <h4>September 2018 - Present</h4>
                             </div>
                         </div>
-                        <div class="row experience-summary">
+                        <div class="row">
                             <div class="col-md-12">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat ullam, pariatur, iste sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam corporis, accusamus repudiandae nihil! Sed?</p>
                             </div>
@@ -309,7 +254,7 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
                                 <h3>Mar. 2015 - Sep. 2018</h3>
                             </div>
                         </div>
-                        <div class="row experience-summary">
+                        <div class="row">
                             <div class="col-md-12">
                                 <p>Reserch about geostatistics.</p>
                             </div>
@@ -350,7 +295,7 @@ PARA O MENU USAR O EXEMPLO https://getbootstrap.com/docs/4.3/examples/jumbotron/
             </article>
 
             <!-- Contact Me Article -->
-            <article id="contactMe">
+            <article id="contactMe" class="articles">
                 <div class="container">
                     <h2 class="bg-secondary rounded"><i class="fas fa-phone"></i> Contact Me</h2>
                     <div class="">
