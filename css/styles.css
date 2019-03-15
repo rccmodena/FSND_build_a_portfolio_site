@@ -1,6 +1,9 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+}
+
+#jumdfbotronContainer{
+    display: none;
 }
 
 .navbar {
@@ -11,10 +14,6 @@ body {
     background-color: #20c997;
 }
 
-.header-logo {
-
-}
-
 .header-title {
     text-align: right;
 }
@@ -23,7 +22,7 @@ body {
     margin-top: 100px;
 }
 
-i {
+.round_i {
     width: 1.6em;
     height: 1.6em;
     padding: 8px;
@@ -43,10 +42,25 @@ i {
     margin-top: 30px;
 }
 
-.experience-date {
-    text-align: right;
-}
-
 img {
     max-width: 100%;
+    width: 100%;
+}
+
+.website-footer {
+    margin-top: 30px;
+}
+
+.text-footer {
+    padding: 20px;
+}
+
+.contacts {
+    font-size: 2.5rem;
+    color: inherit;
+    margin-right: 20px;
+}
+
+.contacts:hover {
+    color: #6c757d;
 }
