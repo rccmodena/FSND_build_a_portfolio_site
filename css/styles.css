@@ -2,6 +2,11 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
 .header-logo {
     display: flex;
     justify-content: center;
@@ -9,11 +14,15 @@ body {
 }
 
 .img-logo {
-    max-width: 100px;
+    max-width: 25vw;
 }
 
 .header-title {
     text-align: center;
+}
+
+.header-title-align {
+    margin-top: 2em;
 }
 
 .navbar {
@@ -51,11 +60,6 @@ body {
 
 .experience-title {
     margin-top: 30px;
-}
-
-img {
-    max-width: 100%;
-    width: 100%;
 }
 
 .website-footer {
