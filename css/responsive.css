@@ -1,23 +1,8 @@
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 1.2rem;
-    }
-    .experience_date {
-        text-align: left;
-    }
+@media (max-width: 575px) {
 }
 
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 1.4rem;
-    }
-    .experience_date {
-        text-align: left;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 1.6rem;
+@media (min-width: 768px) {
+    .header-title {
+        text-align: right;
     }
 }
