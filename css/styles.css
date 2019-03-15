@@ -2,8 +2,18 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#jumdfbotronContainer{
-    display: none;
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+    max-width: 100px;
+}
+
+.header-title {
+    text-align: center;
 }
 
 .navbar {
@@ -11,11 +21,7 @@ body {
 }
 
 .nav-item:hover {
-    background-color: #20c997;
-}
-
-.header-title {
-    text-align: right;
+    background-color: #343a40;
 }
 
 .articles {
@@ -36,6 +42,11 @@ body {
 
 .featured-work {
     padding: 20px;
+}
+
+.featured-work:hover {
+    background-color: #6c757d;
+    cursor: pointer;
 }
 
 .experience-title {
