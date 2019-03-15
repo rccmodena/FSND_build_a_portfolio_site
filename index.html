@@ -22,57 +22,65 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <!-- Responsive styles -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <!--<link rel="stylesheet" href="css/responsive.css">-->
     </head>
 
     <body class="bg-dark text-light" >
 
-        <!-- Header: Jumbotron Logo + Name -->
-        <header class="container">
-            <div class="jumbotron bg-secondary">
-                <div class="row">
-                    <div class="header-logo col-sm-2">
-                        <img src="img/logo.svg" alt="Site Logo">
+        <!-- Header: Jumbotron Logo + Name + Menu -->
+        <header>
+
+            <!-- Menu -->
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-dark  bg-secondary rounded">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutMe">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#featuredWork">Featured Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactMe">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="header-title col-sm-10 yellow">
-                        <h1 class="display-6">Rudi C. C. Modena</h1>
-                        <p class="lead">Geologist and Junior Web Developer</p>
+                </nav>
+            </div>
+
+            <!-- Jumbotron Logo + Name -->
+            <div id="jumbotronContainer" class="container">
+                <div class="jumbotron bg-secondary">
+                    <div class="row">
+                        <div class="header-logo col-sm-2">
+                            <img src="img/logo_rccm.png" alt="Site Logo">
+                        </div>
+                        <div class="header-title col-sm-10 yellow">
+                            <h1>Rudi C. C. Modena</h1>
+                            <p>Geologist and Junior Web Developer</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </header>
 
-        <!-- Menu -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#featuredWork">Featured Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#professionalExperience">Professional and Academic Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contactMe">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
 
         <!-- Main Content -->
         <main>
@@ -80,12 +88,12 @@
             <!-- About Me Article -->
             <article id="aboutMe">
                 <div class="container">
-                    <h2 class="bg-secondary rounded"><i class="fas fa-user"></i> About Me</h2>
+                    <h2 class="bg-secondary rounded"><i class="fas fa-user round_i"></i> About Me</h2>
                     <figure>
                         <picture>
-                            <source media="(min-width: 750px)" srcset="img/GiantsCauseway.JPG 2x, img/GiantsCauseway.JPG" />
-                            <source media="(min-width: 500px)" srcset="img/GiantsCauseway.JPG" />
-                            <img src="img/GiantsCauseway.JPG" alt="Giant's Causeway">
+                            <source media="(min-width: 750px)" srcset="img/GiantsCauseway-1600_large_2x.jpg 2x, img/GiantsCauseway-800_large_1x.jpg" />
+                            <source media="(min-width: 500px)" srcset="img/GiantsCauseway-400_medium.jpg" />
+                            <img src="img/GiantsCauseway-300_small.jpg" alt="Giant's Causeway">
                         </picture>
                         <figcaption>Giant's Causeway. Source: <a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Giant%27s_Causeway_%2814%29.JPG" target="_blank">Wikipedia</a>.</figcaption>
                     </figure>
@@ -100,7 +108,7 @@
             <!-- Featured Work Article -->
             <article id="featuredWork" class="articles">
                 <div class="container">
-                    <h2 class="bg-secondary rounded"><i class="far fa-file-code"></i> Featured Work</h2>
+                    <h2 class="bg-secondary rounded"><i class="far fa-file-code round_i"></i> Featured Work</h2>
 
                     <div class="container">
 
@@ -109,9 +117,9 @@
                             <div class="col-md-6 col-lg-4 featured-work">
                                 <figure>
                                     <picture>
-                                        <source media="(min-width: 750px)" srcset="img/project_1.png 2x, img/project_1.png" />
-                                        <source media="(min-width: 500px)" srcset="img/project_1.png" />
-                                        <img src="img/project_1.png" alt="Movie Trailer Website Project Screenshot">
+                                        <source media="(min-width: 750px)" srcset="img/project_1-1600_large_2x.png 2x, img/project_1-800_large_1x.png" />
+                                        <source media="(min-width: 500px)" srcset="img/project_1-400_medium.png" />
+                                        <img src="img/project_1-300_small.png" alt="Movie Trailer Website Project Screenshot">
                                     </picture>
                                 </figure>
                                 <h4 class="text-center">Movie Trailer Website</h4>
@@ -121,9 +129,9 @@
                             <div class="col-md-6 col-lg-4 featured-work">
                                 <figure>
                                     <picture>
-                                        <source media="(min-width: 750px)" srcset="img/project_1.png 2x, img/project_1.png" />
-                                        <source media="(min-width: 500px)" srcset="img/project_1.png" />
-                                        <img src="img/project_1.png" alt="Movie Trailer Website Project Screenshot">
+                                        <source media="(min-width: 750px)" srcset="img/project_1-1600_large_2x.png 2x, img/project_1-800_large_1x.png" />
+                                        <source media="(min-width: 500px)" srcset="img/project_1-400_medium.png" />
+                                        <img src="img/project_1-300_small.png" alt="Movie Trailer Website Project Screenshot">
                                     </picture>
                                 </figure>
                                 <h4 class="text-center">Build a Portfolio Site</h4>
@@ -133,9 +141,9 @@
                             <div class="col-md-6 col-lg-4 featured-work">
                                 <figure>
                                     <picture>
-                                        <source media="(min-width: 750px)" srcset="img/project_1.png 2x, img/project_1.png" />
-                                        <source media="(min-width: 500px)" srcset="img/project_1.png" />
-                                        <img src="img/project_1.png" alt="Movie Trailer Website Project Screenshot">
+                                        <source media="(min-width: 750px)" srcset="img/under_construction-1600_large_2x.png 2x, img/under_construction-800_large_1x.png" />
+                                        <source media="(min-width: 500px)" srcset="img/under_construction-400_medium.png" />
+                                        <img src="img/under_construction-300_small.png" alt="Movie Trailer Website Project Screenshot">
                                     </picture>
                                 </figure>
                                 <h4 class="text-center">Log Analysis</h4>
@@ -147,7 +155,7 @@
                                     <picture>
                                         <source media="(min-width: 750px)" srcset="img/project_1.png 2x, img/project_1.png" />
                                         <source media="(min-width: 500px)" srcset="img/project_1.png" />
-                                        <img src="img/project_1.png" alt="Movie Trailer Website Project Screenshot">
+                                        <img src="img/under_construction.png" alt="Movie Trailer Website Project Screenshot">
                                     </picture>
                                 </figure>
                                 <h4 class="text-center">Item Catalog</h4>
@@ -159,7 +167,7 @@
                                     <picture>
                                         <source media="(min-width: 750px)" srcset="img/project_1.png 2x, img/project_1.png" />
                                         <source media="(min-width: 500px)" srcset="img/project_1.png" />
-                                        <img src="img/project_1.png" alt="Movie Trailer Website Project Screenshot">
+                                        <img src="img/under_construction.png" alt="Movie Trailer Website Project Screenshot">
                                     </picture>
                                 </figure>
                                 <h4 class="text-center">Neighborhood Map</h4>
@@ -172,7 +180,7 @@
             <!-- Education Article -->
             <article id="education" class="articles">
                 <div class="container">
-                    <h2 class="bg-secondary rounded"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+                    <h2 class="bg-secondary rounded"><i class="fa fa-graduation-cap round_i" aria-hidden="true"></i> Education</h2>
 
                     <!-- Master UFRGS -->
                     <h4 class="experience-title">Master's degree student in Mining Engineering</h4>
@@ -230,10 +238,10 @@
                 </div>
             </article>
 
-            <!--Professional and Academic Article -->
-            <article id="professionalExperience" class="articles">
+            <!--Professional and Academic Experience Article -->
+            <article id="experience" class="articles">
                 <div class="container">
-                    <h2 class="bg-secondary rounded"><i class="fa fa-briefcase"></i> Professional and Academic Experience</h2>
+                    <h2 class="bg-secondary rounded"><i class="fa fa-briefcase round_i"></i> Experience</h2>
 
 
                     <!-- Vendabem -->
@@ -255,7 +263,7 @@
                             <p>Federal University of Rio Grande do Sul (UFRGS)</p>
                         </div>
                         <div class="col-md-4  experience-date">
-                            <p>(Oct. 2018 to Present)</p>
+                            <p>(Mar. 2017 to Aug. 2018)</p>
                         </div>
                     </div>
 
@@ -320,14 +328,11 @@
             <!-- Contact Me Article -->
             <article id="contactMe" class="articles">
                 <div class="container">
-                    <h2 class="bg-secondary rounded"><i class="fas fa-phone"></i> Contact Me</h2>
-                    <div class="">
-                        <i class="fab fa-linkedin"></i>linkedin
+                    <h2 class="bg-secondary rounded"><i class="fas fa-phone round_i"></i> Contact Me</h2>
+                    <div class="text-center">
+                        <a class="contacts" href="https://github.com/rccmodena" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="contacts" href="https://www.linkedin.com/in/rccmodena/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <div class="">
-                        github
-                    </div>
-                    <div class="">
                 </div>
             </article>
 
@@ -335,9 +340,9 @@
         </main>
 
         <!-- Footer Copyright -->
-        <footer>
-            <div class="container">
-              Copyright © Rudi C. C. Modena 2019
+        <footer class="container website-footer">
+            <div class="bg-secondary rounded text-center text-footer">
+                Copyright © Rudi C. C. Modena 2019
             </div>
         </footer>
 
