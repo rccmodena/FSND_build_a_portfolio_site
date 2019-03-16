@@ -6,6 +6,8 @@ The project consists in building a portfolio website, based on a design mockup (
 
 This project followed the [Udacity Frontend Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/).
 
+To see the resulting website [click here](https://rccmodena.github.io/build_a_portfolio_site/).
+
 ## Install
 
 To install this project there are two ways:
@@ -17,14 +19,17 @@ $ git clone https://github.com/rccmodena/build_a_portfolio_site.git
 $ cd build_a_portfolio_site/
 ```
 
-## Sections
-
-
-Under constructions....
-
 ## Requirements
 
-This project was implemented with ...
+The website uses:
+- [Bootstrap 4.2.1](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
+- [Popper.js 1.14.6](https://popper.js.org/)
+- [jQuery 3.3.1](https://code.jquery.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Font - Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+
+To convert image files to different sizes and qualities:
+- [Grunt 0.4.5](https://gruntjs.com/)
 
 ## How to Contribute
 
