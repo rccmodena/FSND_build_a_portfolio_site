@@ -8,7 +8,7 @@ The project consists in building a portfolio website, based on a design mockup (
 
 This project followed the [Udacity Frontend Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/).
 
-To see the resulting website [click here](https://rccmodena.github.io/build_a_portfolio_site/).
+To see the resulting website [click here](https://rccmodena.github.io/FSND_build_a_portfolio_site/).
 
 ## Install
 
