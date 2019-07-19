@@ -1,3 +1,5 @@
+![Approved Image](/img/approved.png)
+
 # Project: Build a Portfolio Site
 
 This is the second project of the Udacity's Full Stack Web Developers Nanodegree.
